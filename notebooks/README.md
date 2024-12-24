@@ -1,7 +1,7 @@
 # kifiya_week2
 
 ## Project Description
-
+### Tak 1 and 2
 This project focuses on analyzing user traffic and behavior patterns from network data. The goal is to extract actionable insights that can help improve user experience, optimize service delivery, and inform business decisions. The analysis is based on a dataset that contains user session details, including traffic volume, session duration, and the applications used during the sessions.
 Project Goals:
 
@@ -39,3 +39,50 @@ Project Goals:
     Study the impact of specific user demographics or behaviors on their traffic patterns for more targeted service offerings.
 
 This project combines exploratory data analysis, clustering techniques, and application-specific insights to provide a deeper understanding of user behavior in network traffic, offering valuable information for both technical optimization and business decision-making.
+
+# Task 3: Network Performance Analysis
+## Overview
+
+Task 3 involved analyzing various network performance metrics extracted from a dataset. The goal was to understand throughput, retransmission volumes, and round-trip time (RTT) across different dimensions, such as handset types. The analysis focused on identifying patterns, top and bottom-performing values, and frequently occurring metrics.
+### Key Metrics Analyzed
+
+    TCP Downlink Retransmission Volume (Bytes):
+        Examined the top 5 and bottom 5 values.
+        Determined the most frequent retransmission volume observed.
+
+    TCP Uplink Retransmission Volume (Bytes):
+        Identified devices with the highest and lowest retransmission volumes.
+        Analyzed the most frequent uplink retransmission volume.
+
+    Average Round-Trip Time (RTT) Downlink (ms):
+        Focused on devices with the highest and lowest average RTT.
+        Extracted the most common downlink RTT.
+
+    Average Round-Trip Time (RTT) Uplink (ms):
+        Reviewed the extremes in RTT uplink performance.
+        Noted the most frequently occurring RTT for uplink.
+
+    Average Bearer Throughput Downlink (kbps):
+        Visualized throughput distribution across handset types.
+        Highlighted the best and worst-performing values.
+
+    Average Bearer Throughput Uplink (kbps):
+        Investigated the distribution and outliers.
+        Determined the most frequent throughput values.
+
+### Insights Gained
+
+    Visualization: A scatter plot was generated to visualize throughput distribution by handset type. The plot highlighted variations across devices but also revealed crowding in labels due to the large number of handset types.
+    Performance Extremes:
+        The analysis revealed extreme values for retransmissions, RTT, and throughput that indicate potential performance bottlenecks or anomalies.
+        Most frequent values provided insight into typical network performance.
+
+### Key Outcomes
+
+    The task successfully computed and analyzed key network performance metrics.
+    Data visualizations and top/bottom performers were identified for each metric.
+    Results from this task will serve as valuable references when compiling the final report.
+
+### Notes
+
+This task demonstrated the ability to extract meaningful insights from raw network performance data. The outputs will help in understanding network reliability, identifying optimization opportunities, and benchmarking device performance.
