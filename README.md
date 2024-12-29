@@ -141,3 +141,51 @@ Steps Completed
     notebooks/eda-task4.ipynb: Jupyter Notebook containing all Python code for Task 4.
     PostgreSQL Database:
         Exported data table: user_satisfaction.
+
+
+
+# Task 5: Dashboard Development
+## Overview
+
+The goal of this task was to design an interactive dashboard that visualizes the insights from Tasks 1–4. The dashboard is accessible through a sidebar menu, with each task presented as a separate page. It provides intuitive visualizations, interactive clustering, and data aggregation.
+
+    Framework:
+        Built the dashboard using Streamlit, a Python-based lightweight framework.
+
+    Structure:
+        The app includes four pages for the tasks:
+            Task 1: User Overview Analysis.
+            Task 2: Engagement Analysis.
+            Task 3: Experience Analytics.
+            Task 4: Satisfaction Analysis.
+
+    Key Features:
+        User Overview:
+            Visualizations of top handsets and manufacturers.
+            Aggregation of user behavior metrics.
+        Engagement:
+            Top users for engagement metrics.
+            Clustering based on normalized metrics.
+        Experience:
+            Aggregation of experience-related metrics.
+            Clustering and insights into user experience.
+        Satisfaction:
+            Calculation of engagement, experience, and satisfaction scores.
+            Regression modeling and clustering for satisfaction analysis.
+
+    Deployment:
+        The app is ready to be containerized and deployed.
+
+## Usage Instructions
+
+    Run Locally:
+
+streamlit run Dashboard/app.py
+
+## Deployment:
+
+    Use Docker or a cloud service (e.g., Streamlit Cloud, Heroku) to deploy the app for public access.
+
+## Dashboard Navigation:
+
+    Use the sidebar menu to explore the results for each task.
