@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load data
-@st.cache
+@st.cache_data
 def load_data():
     file_path = '/home/shadowlast/Documents/projects/kifiya/kifiya_week2/Data/Week2_challenge_data_source.xlsx'
     data = pd.read_excel(file_path)
