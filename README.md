@@ -86,3 +86,58 @@ Task 3 involved analyzing various network performance metrics extracted from a d
 ### Notes
 
 This task demonstrated the ability to extract meaningful insights from raw network performance data. The outputs will help in understanding network reliability, identifying optimization opportunities, and benchmarking device performance.
+
+# Task 4: Satisfaction Analysis
+## Overview
+
+This task focused on analyzing customer satisfaction by combining insights from user engagement (Task 2) and user experience (Task 3). The goal was to calculate scores for engagement, experience, and overall satisfaction, followed by clustering and predictive modeling.
+Steps Completed
+### 4.1 Engagement and Experience Scores
+
+    Engagement Score:
+        Calculated as the Euclidean distance between each user's engagement metrics and the less engaged cluster centroid.
+    Experience Score:
+        Calculated as the Euclidean distance between each user's experience metrics and the worst experience cluster centroid.
+
+### 4.2 Satisfaction Score
+
+    Computed as the average of the engagement and experience scores.
+    Identified the top 10 satisfied users based on satisfaction scores.
+
+### 4.3 Regression Model
+
+    Built a regression model to predict satisfaction scores.
+        Features: Engagement and experience scores.
+        Target: Satisfaction score.
+    Evaluated the model with Mean Squared Error (MSE) and R-squared metrics.
+
+### 4.4 Clustering
+
+    Applied k-means clustering (k=2) on the engagement and experience scores to group users into satisfaction-based clusters.
+
+### 4.5 Cluster Analysis
+
+    Aggregated the average satisfaction and experience scores for each cluster.
+
+### 4.6 Export to PostgreSQL
+
+    Exported the final results to a PostgreSQL database, including:
+        User ID
+        Engagement Score
+        Experience Score
+        Satisfaction Score
+
+## Key Outputs
+
+    Top 10 Satisfied Users:
+        Users with the highest satisfaction scores, representing the most engaged and best-experienced customers.
+    Satisfaction Clusters:
+        Segmented users into two clusters for better targeting and optimization.
+    Database Export:
+        Results saved in a PostgreSQL table (user_satisfaction) for further use.
+
+## Files
+
+    notebooks/eda-task4.ipynb: Jupyter Notebook containing all Python code for Task 4.
+    PostgreSQL Database:
+        Exported data table: user_satisfaction.
